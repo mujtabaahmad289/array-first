@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIME NUMBER</title>
+</head>
+<body>
+    <p>Write a program that takes an integer input and determines whether it's a prime number or not.<br> 
+        Use loops and if conditions to implement the prime number check.
+</p>
+
+<input type="number" onchange="primeNumber()" id="inputValue">
+<h1 id="printHere"></h1>
+
+<script>
+
+var prin = document.getElementById("printHere")
+
+function primeNumber(){
+
+prin.innerHTML=``;
+
+let innput =document.getElementById("inputValue").value;
+
+for (let index=2; index<innput; index++) 
+
+    if (innput%index==0)
+    {
+        prin.innerHTML=`This ${innput} is not a prime number`
+   break; }
+     else{
+
+        prin.innerHTML=`This ${innput} is a prime number`;
+     }
+     }
+</script>
+
+
+</body>
+</html>

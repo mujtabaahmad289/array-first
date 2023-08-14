@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+    <h1>Even Number Array and Sum</h1>   
+    <button onclick="MyArray()">Click</button>
+   
+    <h1 id="print"></h1>
+   <script>
+   
+   let outputt=document.getElementById("print");
+   
+   function MyArray(){
+   
+       outputt.innerHTML='';
+   
+   let numbers=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+   
+   let newArray=[]
+   let sum=0
+   for (let index = 0; index < numbers.length; index++) {
+   
+   if (numbers[index]%2==0) {
+    newArray.push(numbers[index])  
+    sum+=numbers[index] 
+   }
+   }
+   outputt.innerHTML=`this is ${newArray} and this is sum "${sum}"`
+   }
+  
+   
+   </script>
+
+</body>
+</html>

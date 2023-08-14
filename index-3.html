@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Elements
+    </title>
+</head>
+<body>
+    <h1>Array of strings</h1>
+    <button onclick="getArrayTwo()">Get Array</button>
+    <h1 id="result"></h1>
+
+    <script>
+        let output = document.getElementById('result');
+        let fruits = ["apple", "banana", "grape", "orange", "kiwi"];
+
+        function getArrayTwo() {
+            output.innerHTML = '';
+            for (let index = 0; index < fruits.length; index++) {
+                if (fruits[index].includes("a")) {
+                    output.innerHTML += fruits[index] + "<br>";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

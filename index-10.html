@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+<body>
+ 
+    <button onclick="Grading()">Click here</button>
+
+    <h1 id="print">Print here</h1>
+    
+    <script>
+        let print = document.getElementById('print')
+        function Grading() {
+            print.innerHTML= '';
+            const studentName = ["Awais","Masood","Zubair","Usaman","waheed","Ukash","Bilal"];
+            const number = [100,84,73,62,51,39,0];
+            
+            for (index=0; index<studentName.length; index++){
+            
+            if (number[index]>=90 && number[index]<=100) {
+                grade= "A";
+            }
+           
+            else if (number[index]>=80 && number[index]<=89) {
+                grade= "B";
+            }
+            else if (number[index]>=70 && number[index]<=79) {
+                grade= "C";
+            }
+            else if (number[index]>=60 && number[index]<=69) {
+              grade= "D";
+            }
+            else if (number[index]>=40 && number[index]<=59) {
+                grade= "E";
+            }
+            else if(number[index]>=0 && number[index]<=39){
+                grade= "F";  
+            }
+           
+            print.innerHTML += "<br>" + `${studentName[index]}  Numb: ${number[index]}      (Grade ${grade})`
+        }
+        }
+    </script>
+</body>
+</html>

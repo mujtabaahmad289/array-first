@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Modification</h1>
+    <button onclick="Array()">Array</button>
+    <input type="number" id="input" onchange="ArrayOne()">
+    
+    <h1 id="show">Print here</h1>
+
+    <script>
+let print=document.getElementById('show')
+
+        function Array(){
+
+            print.innerHTML='';
+
+        let celsius = [25, 30, 18, 22, 38];
+
+        var fahrenheit = [];
+
+        for (index=0; index<celsius.length; index++){
+
+            fahrenheit = (celsius[index] * 9/5)+32;
+
+            print.innerHTML+= "<br>" + `Celsius:  ${celsius[index]}C   =   Fahrenheit:  ${fahrenheit}F `
+        }}
+
+        function ArrayOne(){
+
+            print.innerHTML='';
+
+            let input=document.getElementById('input').value
+
+            for (index=0; index<input; index++){
+                
+            fahrenheit = (input* 9/5)+32;
+
+            print.innerHTML= ` Celsius ${input} C =  Fahrenheit  ${fahrenheit} F`
+        }}
+
+    </Script>
+</body>
+</html>

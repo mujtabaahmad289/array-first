@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAximum Number</title>
+</head>
+<body>
+    <h1>Basic Array Manipulation</h1>
+    <button onclick="getArray()">Get Max</button>
+    <h1 id="result"></h1>
+
+
+    <script>
+
+        let output = document.getElementById('result')
+
+function getArray() {
+   output.innerHTML = '';
+   let max = 0
+   let numbers = [7,16,5,96,80,54];
+
+for (let i = 0; i < numbers.length; i++)
+ {
+if (numbers[i]>max) {
+max=numbers[i]
+output.innerHTML = `Max number is ${max} and min number is ${min}`
+}}
+
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Even Number Array and Sum</h1>   
+    <button onclick="MyArray()">Click</button>
+   
+    <h1 id="print"></h1>
+   <script>
+   
+   let outputt=document.getElementById("print");
+      function MyArray(){
+let Aray=[1,2,3,4,5,6,7,8,9,10]
+let newArray=[];
+for (let index = 0; index < Aray.length; index++) {
+ newArray.push(Aray[index] + "5")  
+ 
+}
+
+
+outputt.innerHTML= newArray
+
+   }
+   </script> 
+</body>
+</html>

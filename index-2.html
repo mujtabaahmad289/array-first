@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Manipulation</title>
+</head>
+<body>
+    <h1>Basic Array Manipulation</h1>
+    <button onclick="getArray()">Get Aray</button>
+    <h1 id="result"></h1>
+
+
+    <script>
+
+        let output = document.getElementById('result')
+
+        let numbers = [3, 7, 1, 9, 4 ,5,6,7,8,9,3,5,7,8];
+function getArray() {
+  output.innerHTML = '';
+  let newaray=[];
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 5) {
+  newaray.push(numbers[i]);
+    
+  }
+
+}
+output.innerHTML= newaray
+}
+
+
+    </script>
+</body>
+</html>

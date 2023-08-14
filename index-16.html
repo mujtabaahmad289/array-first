@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ُPower of Number</h1>
+    <button onclick="Array()">Array</button>
+    <input type="number" id="inputbase" placeholder="input base">
+    <input type="number" id="inputpower" placeholder="input Power">
+    <h1 id="show"></h1>
+
+<script>
+let outputt=document.getElementById('show')
+function Array() {
+ let   inputtBase=document.getElementById("inputbase").value
+let inputtPower=document.getElementById("inputpower").value
+    let result = '';
+for (let index = 0; index < inputtBase; index++) {
+
+result=inputtPower*inputtBase
+}
+
+outputt.innerHTML=result
+}
+
+
+
+</script>
+</body>
+</html>
